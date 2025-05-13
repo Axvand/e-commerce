@@ -30,7 +30,7 @@ body {
   top: 30px;
   left: 30px;
   animation: girar720;
-  animation-duration: 20s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   z-index: 1;
@@ -225,7 +225,7 @@ footer {
     top: 2px;
     left: 7.2px;
     animation: girar720;
-    animation-duration: 100s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
   }
   .navbar-collapse {
@@ -269,12 +269,20 @@ footer {
   }
 }
 
-@keyframes girar720 {
+@keyframes girar5 {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(51840deg);
+  }
+}
+@keyframes girar720 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
   }
 }
 
@@ -297,6 +305,8 @@ footer {
   text-decoration: none;
   transition: all 0.3s ease;
   z-index: 1000;
+  animation: bounceInRight;
+  animation-duration: 1s;
 }
 
 .whatsapp-float:hover {
