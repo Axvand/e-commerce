@@ -219,7 +219,14 @@ body {
   transform: scale(1.2);
 }
 main {
-  height: 30px;
+  height: 330px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main2 {
+  height: 330px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
