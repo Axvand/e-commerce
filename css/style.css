@@ -228,8 +228,21 @@ footer {
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
+  .navbar-collapse {
+    text-align: right;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 0.5rem 1rem;
+  }
+
   .contact-info {
-    text-align: left;
+    text-align: right;
     margin-top: 1rem;
   }
 
