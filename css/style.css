@@ -110,14 +110,19 @@ body {
 .dropdown-menu {
   max-height: 400px;
   overflow-y: auto;
+  overflow-x: hidden;
   border-color: var(--marrom);
   padding: 0.5rem 0;
+  width: 100%;
 }
 
 .dropdown-item {
   padding: 0.5rem 1rem;
   color: var(--marrom);
   transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dropdown-item:hover {
@@ -130,11 +135,12 @@ body {
   width: 20px;
   margin-right: 10px;
   color: var(--amarelo-escuro);
+  text-align: center;
 }
 
 /* Estilização da barra de rolagem do dropdown */
 .dropdown-menu::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 .dropdown-menu::-webkit-scrollbar-track {
@@ -143,7 +149,7 @@ body {
 
 .dropdown-menu::-webkit-scrollbar-thumb {
   background-color: var(--amarelo-escuro);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .dropdown-menu::-webkit-scrollbar-thumb:hover {
