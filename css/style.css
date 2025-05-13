@@ -220,9 +220,10 @@ footer {
 /* Responsividade */
 @media (max-width: 768px) {
   .esferas {
-    display: none;
+    height: 30px;
     position: fixed;
-    left: 40px;
+    top: 2px;
+    left: 7.2px;
     animation: girar720;
     animation-duration: 2s;
     animation-iteration-count: infinite;
