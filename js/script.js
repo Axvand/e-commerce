@@ -1,3 +1,4 @@
+//renderização panfletos e cartões de visita
 fetch("./produtos.json")
   .then((response) => {
     if (!response.ok) {
@@ -21,11 +22,10 @@ fetch("./produtos.json")
               produto.material
             }" height="90px" />
               <h3>${produto.material} ${quantidade} un.</h3>
-              <p>${item.impressao}</p>
+              <p>${produto.impressao}</p>
               <p class="price">R$ ${item.preco.toFixed(2)}</p>
               <div class="size-selector">
                 <select class="form-select">
-                  <option value="">${item.formato}</option>
                   <option value="${item.formato}">${item.formato}</option>
                 </select>
               </div>
@@ -62,3 +62,13 @@ fetch("./produtos.json")
   .catch((error) => {
     console.error("Erro ao carregar o arquivo JSON:", error);
   });
+
+// ======================Carrossel3==================
+
+let currentSlide = 1;
+const totalSlides = 3;
+
+setInterval(() => {
+  currentSlide = (currentSlide % totalSlides) + 1;
+  document.getElementById("btn3-" + currentSlide).checked = true;
+}, 3000);
