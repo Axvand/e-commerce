@@ -1,212 +1,117 @@
 {
-  "produtos": {
-    "Impressos": [
-      {
-        "id": "imp001",
-        "nome": "Cartão de Visita",
-        "descricao": "Cartão de visita frente e verso com acabamento fosco.",
-        "tamanhos": ["9x5 cm", "8,5x5,5 cm"],
-        "precos": ["R$ 35,00 (100 unid.)", "R$ 60,00 (500 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Cartão+de+Visita"
+  "produtos": [
+    {
+      "material": "Panfletos",
+      "img": "panfletos.jpg",
+      "papel": "Couchê 90g",
+      "valores": {
+        "5000": [
+          {
+            "formato": "10x15",
+            "impressao": "Frente Colorido",
+            "preco": 300.0,
+            "img": "panfleto_10x15_frente.jpg"
+          },
+          {
+            "formato": "10x15",
+            "impressao": "Frente e Verso Colorido",
+            "preco": 400.0,
+            "img": "panfleto_10x15_fv.jpg"
+          },
+          {
+            "formato": "10x21",
+            "impressao": "Frente Colorido",
+            "preco": 410.0,
+            "img": "panfleto_10x21_frente.jpg"
+          },
+          {
+            "formato": "10x21",
+            "impressao": "Frente e Verso Colorido",
+            "preco": 500.0,
+            "img": "panfleto_10x21_fv.jpg"
+          },
+          {
+            "formato": "15x21",
+            "impressao": "Frente Colorido",
+            "preco": 470.0,
+            "img": "panfleto_15x21_frente.jpg"
+          },
+          {
+            "formato": "15x21",
+            "impressao": "Frente e Verso Colorido",
+            "preco": 600.0,
+            "img": "panfleto_15x21_fv.jpg"
+          }
+        ],
+        "10000": [
+          {
+            "formato": "10x15",
+            "impressao": "Frente Colorido",
+            "preco": 550.0,
+            "img": "panfleto_10x15_frente_10000.jpg"
+          },
+          {
+            "formato": "10x15",
+            "impressao": "Frente e Verso Colorido",
+            "preco": 700.0,
+            "img": "panfleto_10x15_fv_10000.jpg"
+          },
+          {
+            "formato": "10x21",
+            "impressao": "Frente Colorido",
+            "preco": 800.0,
+            "img": "panfleto_10x21_frente_10000.jpg"
+          },
+          {
+            "formato": "10x21",
+            "impressao": "Frente e Verso Colorido",
+            "preco": 950.0,
+            "img": "panfleto_10x21_fv_10000.jpg"
+          },
+          {
+            "formato": "15x21",
+            "impressao": "Frente Colorido",
+            "preco": 900.0,
+            "img": "panfleto_15x21_frente_10000.jpg"
+          },
+          {
+            "formato": "15x21",
+            "impressao": "Frente e Verso Colorido",
+            "preco": 1100.0,
+            "img": "panfleto_15x21_fv_10000.jpg"
+          }
+        ]
       },
-      {
-        "id": "imp002",
-        "nome": "Panfleto",
-        "descricao": "Panfletos promocionais em papel couchê 90g.",
-        "tamanhos": ["A5", "A4"],
-        "precos": ["R$ 45,00 (500 unid.)", "R$ 80,00 (1000 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Panfleto"
-      },
-      {
-        "id": "imp003",
-        "nome": "Folder",
-        "descricao": "Folder dobrado com impressão frente e verso.",
-        "tamanhos": ["A4 dobrado", "29,7x21 cm"],
-        "precos": ["R$ 120,00 (500 unid.)", "R$ 200,00 (1000 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Folder"
-      }
-    ],
-    "Corporativos": [
-      {
-        "id": "cor001",
-        "nome": "Cartaz",
-        "descricao": "Cartaz promocional colorido em couchê 150g.",
-        "tamanhos": ["A3", "A2"],
-        "precos": ["R$ 50,00 (20 unid.)", "R$ 90,00 (50 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Cartaz"
-      },
-      {
-        "id": "cor002",
-        "nome": "Papel Timbrado",
-        "descricao": "Papel timbrado personalizado em papel offset 90g.",
-        "tamanhos": ["A4", "Ofício"],
-        "precos": ["R$ 75,00 (200 unid.)", "R$ 130,00 (500 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Papel+Timbrado"
-      },
-      {
-        "id": "cor003",
-        "nome": "Bloco de Notas",
-        "descricao": "Blocos personalizados com 50 folhas cada.",
-        "tamanhos": ["A6", "A5"],
-        "precos": ["R$ 40,00 (10 blocos)", "R$ 75,00 (20 blocos)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Bloco+de+Notas"
-      }
-    ],
-    "Talões e Pastas": [
-      {
-        "id": "tal001",
-        "nome": "Talão de Pedido",
-        "descricao": "Talões numerados com papel autocopiativo.",
-        "tamanhos": ["A6", "A5"],
-        "precos": ["R$ 60,00 (10 unid.)", "R$ 110,00 (20 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Talão+Pedido"
-      },
-      {
-        "id": "tal002",
-        "nome": "Talão de Orçamento",
-        "descricao": "Talão personalizado com 2 vias.",
-        "tamanhos": ["A6", "A5"],
-        "precos": ["R$ 65,00 (10 unid.)", "R$ 120,00 (20 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Talão+Orçamento"
-      },
-      {
-        "id": "tal003",
-        "nome": "Pasta Personalizada",
-        "descricao": "Pasta com laminação e bolso interno.",
-        "tamanhos": ["31x22 cm", "A4"],
-        "precos": ["R$ 90,00 (50 unid.)", "R$ 160,00 (100 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Pastas+Personalizadas"
-      }
-    ],
-    "Etiquetas e Rótulos": [
-      {
-        "id": "eti001",
-        "nome": "Etiqueta Adesiva",
-        "descricao": "Etiquetas adesivas em rolo para identificação.",
-        "tamanhos": ["5x5 cm", "8x8 cm"],
-        "precos": ["R$ 25,00 (100 unid.)", "R$ 45,00 (200 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Etiqueta+Adesiva"
-      },
-      {
-        "id": "eti002",
-        "nome": "Rótulo para Produto",
-        "descricao": "Rótulo resistente à umidade com corte especial.",
-        "tamanhos": ["6x6 cm", "10x10 cm"],
-        "precos": ["R$ 30,00 (100 unid.)", "R$ 55,00 (200 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Rótulo+Produto"
-      },
-      {
-        "id": "eti003",
-        "nome": "Etiqueta Promo Adesiva",
-        "descricao": "Etiqueta colorida ideal para promoções e ofertas.",
-        "tamanhos": ["7x7 cm", "9x9 cm"],
-        "precos": ["R$ 20,00 (100 unid.)", "R$ 38,00 (200 unid.)"],
-        "imagem": "https://via.placeholder.com/300x200?text=Etiqueta+Promo"
-      }
-    ],
-    "Comunicação Visual": [
-      {
-        "id": "com001",
-        "nome": "Banner",
-        "descricao": "Banner em lona com bastão e cordão.",
-        "tamanhos": ["60x90 cm", "90x120 cm"],
-        "precos": ["R$ 45,00", "R$ 70,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Banner"
-      },
-      {
-        "id": "com002",
-        "nome": "Fachada em Lona",
-        "descricao": "Fachada resistente em lona com acabamento em ilhós.",
-        "tamanhos": ["2x1 m", "3x1 m"],
-        "precos": ["R$ 150,00", "R$ 220,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Fachada+Lona"
-      },
-      {
-        "id": "com003",
-        "nome": "Totem Promocional",
-        "descricao": "Totem vertical em PS com impressão colorida.",
-        "tamanhos": ["30x90 cm", "50x150 cm"],
-        "precos": ["R$ 90,00", "R$ 140,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Totem"
-      }
-    ],
-    "Placas e Sinalização": [
-      {
-        "id": "pla001",
-        "nome": "Placa em ACM",
-        "descricao": "Placa rígida com acabamento profissional.",
-        "tamanhos": ["50x50 cm", "100x50 cm"],
-        "precos": ["R$ 120,00", "R$ 210,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Placa+ACM"
-      },
-      {
-        "id": "pla002",
-        "nome": "Placa em PVC",
-        "descricao": "Placa em PVC 2mm com impressão UV.",
-        "tamanhos": ["40x40 cm", "80x60 cm"],
-        "precos": ["R$ 70,00", "R$ 130,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Placa+PVC"
-      },
-      {
-        "id": "pla003",
-        "nome": "Adesivação de Vitrine",
-        "descricao": "Adesivo fosco ou colorido aplicado em vidro.",
-        "tamanhos": ["1x1 m", "2x1 m"],
-        "precos": ["R$ 85,00", "R$ 160,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Adesivo+Vitrine"
-      }
-    ],
-    "Mesas e Cardápios": [
-      {
-        "id": "mes001",
-        "nome": "Display de Mesa",
-        "descricao": "Display de acrílico para mesas com papel interno.",
-        "tamanhos": ["10x15 cm", "15x21 cm"],
-        "precos": ["R$ 20,00", "R$ 35,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Display+Mesa"
-      },
-      {
-        "id": "mes002",
-        "nome": "Cavalete de Chão",
-        "descricao": "Cavalete tipo cavalinho com impressão em PS.",
-        "tamanhos": ["60x90 cm", "90x120 cm"],
-        "precos": ["R$ 110,00", "R$ 180,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Cavalete"
-      },
-      {
-        "id": "mes003",
-        "nome": "Cardápio em PS",
-        "descricao": "Cardápio rígido plastificado em PS com acabamento fosco.",
-        "tamanhos": ["A4", "A3"],
-        "precos": ["R$ 18,00", "R$ 28,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Cardápio+PS"
-      }
-    ],
-    "Adesivos": [
-      {
-        "id": "ade001",
-        "nome": "Adesivo Decorativo",
-        "descricao": "Adesivo grande para decoração de ambientes.",
-        "tamanhos": ["1x1 m", "2x1 m"],
-        "precos": ["R$ 60,00", "R$ 110,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Adesivo+Decorativo"
-      },
-      {
-        "id": "ade002",
-        "nome": "Adesivo Metro Quadrado",
-        "descricao": "Adesivo personalizado vendido por m².",
-        "tamanhos": ["1x1 m", "2x2 m"],
-        "precos": ["R$ 50,00", "R$ 95,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Adesivo+m²"
-      },
-      {
-        "id": "ade003",
-        "nome": "Adesivo Perfurado",
-        "descricao": "Adesivo perfurado ideal para janelas e carros.",
-        "tamanhos": ["1x1 m", "2x1 m"],
-        "precos": ["R$ 75,00", "R$ 140,00"],
-        "imagem": "https://via.placeholder.com/300x200?text=Adesivo+Perfurado"
-      }
-    ]
-  }
+      "observacao": "Consulte valores de outras quantidades, tamanhos e gramatura de papel"
+    },
+    {
+      "material": "Cartões de Visita",
+      "img": "cartoes.jpg",
+      "papel": "Couchê 300g",
+      "quantidade": 1000,
+      "formato": "9x5",
+      "opcoes": [
+        {
+          "descricao": "Cartão Simples Frente Colorido Verso Preto",
+          "preco": "whatsapp",
+          "img": "cartao_frente_preto_verso.jpg"
+        },
+        {
+          "descricao": "Cartão Frente e Verso Colorido",
+          "preco": "whatsapp",
+          "img": "cartao_frente_verso_colorido.jpg"
+        },
+        {
+          "descricao": "Cartão Frente e Verso Colorido,<br/> Verniz Localizado",
+          "preco": "whatsapp",
+          "img": "cartao_verniz_localizado.jpg"
+        },
+        {
+          "descricao": "Cartão Frente e Verso Colorido,<br/> Verniz Localizado e Canto Arredondado",
+          "preco": "whatsapp",
+          "img": "cartao_verniz_canto_arredondado.jpg"
+        }
+      ]
+    }
+  ]
 }
