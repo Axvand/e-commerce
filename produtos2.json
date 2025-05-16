@@ -1,9 +1,8 @@
 {
-  "material": "Comandas e Blocos",
+  "material": "Comandas e Blocos 1000x1",
   "img": "blocos.jpg",
   "papel": "Papel Comum",
   "impressao": "1 cor frente",
-  "observacao": "100x1 ou 50x2. Frente e verso: adicionar R$ 3,50 por bloco",
   "formatos": [
     {
       "formato": "10x15",
@@ -36,7 +35,7 @@
       ]
     },
     {
-      "formato": "10x15 (variação 2)",
+      "formato": "10x21",
       "variacoes": [
         {
           "quantidade": 6,
@@ -66,7 +65,7 @@
       ]
     },
     {
-      "formato": "15x?",
+      "formato": "15x21",
       "variacoes": [
         {
           "quantidade": 6,

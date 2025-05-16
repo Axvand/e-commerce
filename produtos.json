@@ -92,12 +92,12 @@
       "formato": "9x5",
       "opcoes": [
         {
-          "descricao": "Cartão Simples Frente Colorido Verso Preto",
+          "descricao": "Cartão Simples Frente Colorido<br/>Verso Preto",
           "preco": "whatsapp",
           "img": "cartao_frente_preto_verso.jpg"
         },
         {
-          "descricao": "Cartão Frente e Verso Colorido",
+          "descricao": "Completo Cartão Frente e <br>Verso Colorido",
           "preco": "whatsapp",
           "img": "cartao_frente_verso_colorido.jpg"
         },
@@ -107,7 +107,7 @@
           "img": "cartao_verniz_localizado.jpg"
         },
         {
-          "descricao": "Cartão Frente e Verso Colorido,<br/> Verniz Localizado e Canto Arredondado",
+          "descricao": "Cartão Frente e Verso Colorido,<br/> Verniz e Canto Arredondado",
           "preco": "whatsapp",
           "img": "cartao_verniz_canto_arredondado.jpg"
         }
