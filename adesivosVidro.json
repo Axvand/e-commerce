@@ -1,0 +1,67 @@
+{
+  "material": "Adesivo para Vidros",
+  "img": "adesivo_vidros_default.jpg",
+  "formatos": [
+    {
+      "formato": "40x30 cm",
+      "variacoes": [
+        {
+          "quantidade": 1,
+          "preco": 30.0,
+          "img": "adesivo_vidros_40x30.jpg"
+        }
+      ]
+    },
+    {
+      "formato": "50x50 cm",
+      "variacoes": [
+        {
+          "quantidade": 1,
+          "preco": 45.0,
+          "img": "adesivo_vidros_50x50.jpg"
+        }
+      ]
+    },
+    {
+      "formato": "60x60 cm",
+      "variacoes": [
+        {
+          "quantidade": 1,
+          "preco": 60.0,
+          "img": "adesivo_vidros_60x60.jpg"
+        }
+      ]
+    },
+    {
+      "formato": "70x70 cm",
+      "variacoes": [
+        {
+          "quantidade": 1,
+          "preco": 75.0,
+          "img": "adesivo_vidros_70x70.jpg"
+        }
+      ]
+    },
+    {
+      "formato": "80x80 cm",
+      "variacoes": [
+        {
+          "quantidade": 1,
+          "preco": 90.0,
+          "img": "adesivo_vidros_80x80.jpg"
+        }
+      ]
+    },
+    {
+      "formato": "Metro quadrado",
+      "variacoes": [
+        {
+          "quantidade": 1,
+          "preco": 100.0,
+          "img": "adesivo_vidros_metro.jpg"
+        }
+      ]
+    }
+  ],
+  "observacoes": ["*Arte não inclusa"]
+}

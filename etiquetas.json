@@ -1,0 +1,66 @@
+{
+    "material": "Etiqueta em Adesivo Corte Especial",
+    "img": "etiqueta_default.jpg",
+    "formatos": [
+      {
+        "formato": "4x4 cm",
+        "variacoes": [
+          {
+            "quantidade": 500,
+            "preco": 60.0,
+            "img": "etiqueta_4x4_500.jpg"
+          },
+          {
+            "quantidade": 1000,
+            "preco": 115.0,
+            "img": "etiqueta_4x4_1000.jpg"
+          }
+        ]
+      },
+      {
+        "formato": "Vinil 5x5 cm",
+        "variacoes": [
+          {
+            "quantidade": 500,
+            "preco": 65.0,
+            "img": "etiqueta_vinil_5x5_500.jpg"
+          },
+          {
+            "quantidade": 1000,
+            "preco": 125.0,
+            "img": "etiqueta_vinil_5x5_1000.jpg"
+          }
+        ]
+      },
+      {
+        "formato": "10x10 cm",
+        "variacoes": [
+          {
+            "quantidade": 100,
+            "preco": 77.0,
+            "img": "etiqueta_10x10_100.jpg"
+          },
+          {
+            "quantidade": 200,
+            "preco": 130.0,
+            "img": "etiqueta_10x10_200.jpg"
+          }
+        ]
+      },
+      {
+        "formato": "Demais tamanhos (metro)",
+        "variacoes": [
+          {
+            "quantidade": 1,
+            "preco": 70.0,
+            "img": "etiqueta_metro.jpg"
+          }
+        ]
+      }
+    ],
+    "observacoes": [
+      "*Arte não inclusa"
+    ]
+  }
+  
+}

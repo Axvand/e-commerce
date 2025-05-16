@@ -451,6 +451,78 @@ main {
 }
 
 /* ===========================carrossel3 final======================= */
+/* ===========================sessões5 ======================= */
+.menu {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sectionAd {
+  height: 70px;
+  width: 200px;
+  border-radius: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+  transition: 1.5s;
+  margin-bottom: 20px;
+}
+.sectionAd:hover {
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.192);
+  transform: scale(1.05);
+  transition: 0.5s;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+}
+.sectionAd p {
+  margin-top: 10px;
+}
+
+.produtosAdesivosConteiner {
+  width: 100%;
+  padding: 10px 6px;
+}
+.adesivos {
+  transition: 1s;
+}
+.adesivosVidro {
+  display: none;
+  transition: 1s;
+}
+.adesivosTrocaDeOleo {
+  display: none;
+  transition: 1s;
+}
+.adesivosPlotterRecorte {
+  display: none;
+  transition: 1s;
+}
+
+.menuMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sectionAd {
+    display: none;
+  }
+  .menuMobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* ===========================sessões5 final======================= */
 
 /* Footer */
 footer {
@@ -515,7 +587,7 @@ footer {
 
   /* //=========Carrossel3==Mobile============ */
   .slider3 {
-    max-height: 400px;
+    max-height: 600px;
   }
   .slide3-image img {
     display: none;

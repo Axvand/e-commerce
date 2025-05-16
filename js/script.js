@@ -1,4 +1,4 @@
-//renderização panfletos e cartões de visita
+//renderização panfletos e cartões de visita========Carrossel 1 e 2
 fetch("./produtos.json")
   .then((response) => {
     if (!response.ok) {
@@ -63,7 +63,7 @@ fetch("./produtos.json")
     console.error("Erro ao carregar o arquivo JSON:", error);
   });
 
-// ======================Carrossel3==================
+// ======================Carrossel 3 noCards==================
 
 let currentSlide = 1;
 const totalSlides = 3;
@@ -73,46 +73,8 @@ setInterval(() => {
   document.getElementById("btn3-" + currentSlide).checked = true;
 }, 3000);
 
-// ==================================================
-// fetch("./produtos2.json")
-//   .then((response) => {
-//     if (!response.ok) {
-//       throw new Error(`Erro ao carregar o JSON: ${response.status}`);
-//     }
-//     return response.json();
-//   })
-//   .then((produto) => {
-//     const wrapper = document.querySelectorAll(".cards-wrapper");
+// =================Carrossel 4 === Comandas e Blocos==========================
 
-//     produto.formatos.forEach((formatoObj) => {
-//       formatoObj.variacoes.forEach((item) => {
-//         const card = document.createElement("div");
-//         card.className = "product-card";
-
-//         card.innerHTML = `
-//           <img src="Imagens/${item.img}" alt="${
-//           produto.material
-//         }" height="90px" />
-//           <h3>${produto.material} <br>Tamanho(${formatoObj.formato})</h3>
-//           <p>Quantidades: ${item.quantidade}</p>
-//           <p class="price">R$ ${item.preco.toFixed(2)}</p>
-//           <div class="size-selector">
-//             <select class="form-select">
-//               <option value="${formatoObj.formato}">${
-//           formatoObj.formato
-//         }</option>
-//             </select>
-//           </div>
-//           <button class="btn btn-primary">Comprar</button>
-//         `;
-//         // Você pode mudar o índice aqui conforme a posição desejada do wrapper
-//         wrapper[2].appendChild(card);
-//       });
-//     });
-//   })
-//   .catch((error) => {
-//     console.error("Erro ao carregar o arquivo JSON:", error);
-//   });
 fetch("./produtos2.json")
   .then((response) => {
     if (!response.ok) {
@@ -172,3 +134,280 @@ fetch("./produtos2.json")
   .catch((error) => {
     console.error("Erro ao carregar o arquivo JSON:", error);
   });
+
+// ================================navAdesivos===========================
+// Mapeamento entre os valores/classes clicáveis e as classes das seções
+const mapCategoriaParaSecao = {
+  adesivos: "adesivos",
+  "adesivos-vidro": "adesivosVidro",
+  "adesivos-troca-oleo": "adesivosTrocaDeOleo",
+  "adesivos-plotter-recorte": "adesivosPlotterRecorte",
+};
+
+const menu = document.querySelector(".menu");
+const menuMobile = document.getElementById("categoria-adesivo");
+const container = document.querySelector(".produtosAdesivosConteiner");
+
+// Todas as seções dentro do container
+const secoes = container.children;
+
+// Função que esconde todas as seções e mostra só a da categoria escolhida
+function mostrarSecao(categoria) {
+  const classeSecaoParaMostrar = mapCategoriaParaSecao[categoria];
+  if (!classeSecaoParaMostrar) return;
+
+  for (const secao of secoes) {
+    if (secao.classList.contains(classeSecaoParaMostrar)) {
+      secao.style.display = "block";
+    } else {
+      secao.style.display = "none";
+    }
+  }
+
+  // Atualiza a classe ativa dos botões (adiciona 'active' na div clicada, remove nas outras)
+  const botoes = menu.querySelectorAll(".buttonSection");
+  botoes.forEach((botao) => {
+    if (botao.classList.contains(categoria)) {
+      botao.classList.add("active");
+    } else {
+      botao.classList.remove("active");
+    }
+  });
+
+  // Atualiza o select no menu mobile para manter sincronizado
+  if (menuMobile.value !== categoria) {
+    menuMobile.value = categoria;
+  }
+}
+
+// Event listener para clique no menu (divs)
+menu.addEventListener("click", (e) => {
+  const botao = e.target.closest(".buttonSection");
+  if (!botao) return;
+
+  // Detecta a categoria clicada, que é uma das classes do botão
+  const classes = [...botao.classList];
+  const categoria = classes.find((c) =>
+    Object.keys(mapCategoriaParaSecao).includes(c)
+  );
+  if (!categoria) return;
+
+  mostrarSecao(categoria);
+});
+
+// Event listener para change no select
+menuMobile.addEventListener("change", (e) => {
+  mostrarSecao(e.target.value);
+});
+
+// Ao carregar a página, mostra a primeira seção e ativa o botão correspondente
+window.addEventListener("DOMContentLoaded", () => {
+  mostrarSecao("adesivos");
+});
+// ===============Carrossel1adesivos======================
+fetch("./adesivos.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Erro ao carregar o JSON: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((produto) => {
+    const wrapper = document.querySelectorAll(".cards-wrapper");
+
+    // Limpar wrapper antes (opcional)
+    wrapper.innerHTML = "";
+
+    produto.opcoes.forEach((opcao, index) => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.style.height = "350px";
+
+      card.innerHTML = `
+        <img src="Imagens/${opcao.img}" alt="${
+        produto.material
+      }" height="90px" />
+        <h3>${produto.material}</h3>
+        <p style="font-size:13px">${opcao.descricao}</p>
+        <p class="price">R$ ${opcao.preco.toFixed(2)}</p>
+        <button class="btn btn-primary">Comprar</button>
+      `;
+
+      wrapper[3].appendChild(card);
+    });
+  })
+  .catch((error) => {
+    console.error("Erro ao carregar o arquivo JSON:", error);
+  });
+
+const wrapper = document.querySelectorAll(".cards-wrapper");
+console.log(wrapper);
+
+// ===============Carrossel2 adesivos Vidro======================
+fetch("./adesivosVidro.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Erro ao carregar o JSON: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((produto) => {
+    const wrapper = document.querySelectorAll(".cards-wrapper");
+
+    // Limpa o container antes
+    wrapper[4].innerHTML = "";
+
+    produto.formatos.forEach((formatoObj) => {
+      const variacao = formatoObj.variacoes[0]; // primeira variação
+
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.style.height = "350px";
+
+      card.innerHTML = `
+              <img src="Imagens/${variacao.img}" alt="${
+        produto.material
+      }" height="90px" />
+              <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
+              <p class="price">R$ ${variacao.preco.toFixed(2)}</p>
+              <button class="btn btn-primary">Comprar</button>
+            `;
+
+      wrapper[4].appendChild(card);
+    });
+  })
+  .catch((error) => {
+    console.error("Erro ao carregar o arquivo JSON:", error);
+  });
+
+// ===============Carrossel3 adesivos Troca de óleo======================
+
+fetch("./adesivosTrocaDeOleo.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Erro ao carregar o JSON: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((produto) => {
+    const wrapper = document.querySelectorAll(".cards-wrapper");
+    wrapper[5].innerHTML = ""; // limpa conteúdo antigo
+
+    produto.formatos.forEach((formatoObj) => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.style.height = "350px";
+
+      // Pega a primeira variação para exibir como padrão
+      const primeiraVariacao = formatoObj.variacoes[0];
+
+      // Gera as opções do select com quantidade
+      const options = formatoObj.variacoes
+        .map(
+          (v, index) => `<option value="${index}">${v.quantidade} un.</option>`
+        )
+        .join("");
+
+      card.innerHTML = `
+    <img src="Imagens/${primeiraVariacao.img}" alt="${
+        produto.material
+      }" height="90px" />
+    <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
+    <p class="price">R$ ${primeiraVariacao.preco.toFixed(2)}</p>
+    <div class="size-selector">
+      <select class="form-select">
+        ${options}
+      </select>
+    </div>
+    <button class="btn btn-primary">Comprar</button>
+  `;
+
+      // Atualiza preço e imagem ao mudar a seleção
+      const select = card.querySelector("select");
+      const priceTag = card.querySelector(".price");
+      const imgTag = card.querySelector("img");
+
+      select.addEventListener("change", (event) => {
+        const index = event.target.value;
+        const variacaoSelecionada = formatoObj.variacoes[index];
+        priceTag.textContent = `R$ ${variacaoSelecionada.preco.toFixed(2)}`;
+        imgTag.src = `Imagens/${variacaoSelecionada.img}`;
+      });
+
+      wrapper[5].appendChild(card);
+    });
+  })
+  .catch((error) => {
+    console.error("Erro ao carregar o arquivo JSON:", error);
+  });
+
+// ===============Carrossel4 adesivos Plotter Recorte======================
+fetch("./adesivosPlotterRecorte.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Erro ao carregar o JSON: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((produto) => {
+    const wrapper = document.querySelectorAll(".cards-wrapper");
+    wrapper[6].innerHTML = "";
+
+    produto.formatos.forEach((formatoObj) => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.style.height = "350px";
+
+      const primeiraVariacao = formatoObj.variacoes[0];
+
+      // Se tiver só 1 variação, não mostra select, só preço e imagem
+      // Se tiver mais de 1 variação, cria select para escolher quantidade
+
+      let selectHTML = "";
+
+      if (formatoObj.variacoes.length > 1) {
+        const options = formatoObj.variacoes
+          .map(
+            (v, idx) => `<option value="${idx}">${v.quantidade} un.</option>`
+          )
+          .join("");
+        selectHTML = `
+      <div class="size-selector">
+        <select class="form-select">
+          ${options}
+        </select>
+      </div>
+    `;
+      }
+
+      card.innerHTML = `
+    <img src="Imagens/${primeiraVariacao.img}" alt="${
+        produto.material
+      }" height="90px" />
+    <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}<br></h3>
+    <p class="price">R$ ${primeiraVariacao.preco.toFixed(2)}</p>
+    ${selectHTML}
+    <button class="btn btn-primary">Comprar</button>
+  `;
+
+      if (formatoObj.variacoes.length > 1) {
+        const select = card.querySelector("select");
+        const priceTag = card.querySelector(".price");
+        const imgTag = card.querySelector("img");
+
+        select.addEventListener("change", (e) => {
+          const idx = e.target.value;
+          const v = formatoObj.variacoes[idx];
+          priceTag.textContent = `R$ ${v.preco.toFixed(2)}`;
+          imgTag.src = `Imagens/${v.img}`;
+        });
+      }
+
+      wrapper[6].appendChild(card);
+    });
+  })
+  .catch((error) => {
+    console.error("Erro ao carregar o arquivo JSON:", error);
+  });
+
+// ================================navAdesivosFinal==========================
