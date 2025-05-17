@@ -1,0 +1,70 @@
+{
+  "material": "Lonas e Banners 440g",
+  "img": "banner_default.jpg",
+  "categorias": [
+    {
+      "tipo": "Banners 440g",
+      "obs": "Arte não inclusa",
+      "formatos": [
+        {
+          "formato": "0.60 x 0.40 m",
+          "preco": 35.0,
+          "img": "banner_060x040.jpg"
+        },
+        {
+          "formato": "0.80 x 0.60 m",
+          "preco": 40.0,
+          "img": "banner_080x060.jpg"
+        },
+        {
+          "formato": "1.05 x 0.80 m",
+          "preco": 50.0,
+          "img": "banner_105x080.jpg"
+        },
+        {
+          "formato": "1.20 x 0.80 m",
+          "preco": 60.0,
+          "img": "banner_120x080.jpg"
+        },
+        {
+          "formato": "Outros tamanhos",
+          "preco_por_m2": 60.0,
+          "img": "banner_personalizado.jpg"
+        }
+      ]
+    },
+    {
+      "tipo": "Lonas 440g",
+      "formatos": [
+        {
+          "formato": "Lona sem acabamento",
+          "preco_por_m2": 50.0,
+          "img": "lona_sem_acabamento.jpg"
+        },
+        {
+          "formato": "Lona para fachada <br>(c/ instalação acima de 4m)",
+          "preco_por_m2": 70.0,
+          "img": "lona_fachada_instalacao.jpg"
+        },
+        {
+          "formato": "Lona para fachada + ferragem <br> (c/ instalação acima de 4m)",
+          "preco_por_m2_variavel": {
+            "min": 110.0,
+            "max": 150.0
+          },
+          "img": "lona_fachada_ferragem.jpg"
+        },
+        {
+          "formato": "Lona com ilhós",
+          "preco_por_m2": 60.0,
+          "img": "lona_ilhos.jpg"
+        },
+        {
+          "formato": "Lona com ilhós <br>(c/ instalação acima de 4m)",
+          "preco_por_m2": 70.0,
+          "img": "lona_ilhos_instalada.jpg"
+        }
+      ]
+    }
+  ]
+}

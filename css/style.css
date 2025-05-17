@@ -469,16 +469,18 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--cinza-claro);
 
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
   transition: 1.5s;
   margin-bottom: 20px;
+  background-color: var(--marrom);
 }
 .sectionAd:hover {
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.192);
   transform: scale(1.05);
   transition: 0.5s;
-  color: rgb(61, 61, 61);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 .sectionAd p {
@@ -522,7 +524,18 @@ main {
   }
 }
 
-/* ===========================sessões5 final======================= */
+/* ===========================sessões5 final================= */
+
+/* ===========================sessões6======================= */
+.sectionLona {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 7px 5px;
+  width: 100%;
+  background: var(--amarelo-escuro);
+}
+
+/* ===========================sessões6 final================= */
 
 /* Footer */
 footer {
