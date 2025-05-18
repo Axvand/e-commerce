@@ -1,72 +1,74 @@
-{
-  "material": "Adesivo Plotter Recorte",
-  "img": "adesivo_plotter_recorte.jpg",
-  "formatos": [
-    {
-      "formato": "Vinil Branco <br>+ Máscara (m²)",
-      "variacoes": [
-        {
-          "quantidade": 1,
-          "preco": 100.0,
-          "img": "adesivo_plotter_branco_mascara.jpg"
-        }
-      ]
-    },
-    {
-      "formato": "Vinil Preto <br>+ Máscara (m²)",
-      "variacoes": [
-        {
-          "quantidade": 1,
-          "preco": 120.0,
-          "img": "adesivo_plotter_preto_mascara.jpg"
-        }
-      ]
-    },
-    {
-      "formato": "20x20 cm <br>(Branco/Preto)",
-      "variacoes": [
-        { "quantidade": 1, "preco": 15.0, "img": "20x20_1.jpg" },
-        { "quantidade": 2, "preco": 25.0, "img": "20x20_2.jpg" },
-        { "quantidade": 3, "preco": 30.0, "img": "20x20_3.jpg" },
-        { "quantidade": 4, "preco": 38.0, "img": "20x20_4.jpg" }
-      ]
-    },
-    {
-      "formato": "30x30 cm <br>(Branco/Preto)",
-      "variacoes": [
-        { "quantidade": 1, "preco": 25.0, "img": "30x30_1.jpg" },
-        { "quantidade": 2, "preco": 35.0, "img": "30x30_2.jpg" },
-        { "quantidade": 3, "preco": 50.0, "img": "30x30_3.jpg" },
-        { "quantidade": 4, "preco": 65.0, "img": "30x30_4.jpg" }
-      ]
-    },
-    {
-      "formato": "40x40 cm <br>(Branco/Preto)",
-      "variacoes": [
-        { "quantidade": 1, "preco": 40.0, "img": "40x40_1.jpg" },
-        { "quantidade": 2, "preco": 65.0, "img": "40x40_2.jpg" },
-        { "quantidade": 3, "preco": 80.0, "img": "40x40_3.jpg" },
-        { "quantidade": 4, "preco": 100.0, "img": "40x40_4.jpg" }
-      ]
-    },
-    {
-      "formato": "50x50 cm <br>(Branco/Preto)",
-      "variacoes": [
-        { "quantidade": 1, "preco": 50.0, "img": "50x50_1.jpg" },
-        { "quantidade": 2, "preco": 75.0, "img": "50x50_2.jpg" },
-        { "quantidade": 3, "preco": 85.0, "img": "50x50_3.jpg" }
-      ]
-    },
-    {
-      "formato": "60x60 cm <br>(Branco/Preto)",
-      "variacoes": [
-        { "quantidade": 1, "preco": 60.0, "img": "60x60_1.jpg" },
-        { "quantidade": 2, "preco": 90.0, "img": "60x60_2.jpg" }
-      ]
-    },
-    {
-      "formato": "80x80 cm <br>(Branco/Preto)",
-      "variacoes": [{ "quantidade": 1, "preco": 80.0, "img": "80x80_1.jpg" }]
-    }
-  ]
-}
+[
+  {
+    "material": "Adesivo Troca de Óleo",
+    "img": "adesivo_troca_oleo_default.jpg",
+    "formatos": [
+      {
+        "formato": "6x6 cm",
+        "variacoes": [
+          {
+            "quantidade": 250,
+            "preco": 140.0,
+            "img": "adesivo_troca_oleo_6x6_250.jpg"
+          },
+          {
+            "quantidade": 500,
+            "preco": 250.0,
+            "img": "adesivo_troca_oleo_6x6_500.jpg"
+          },
+          {
+            "quantidade": 1000,
+            "preco": 450.0,
+            "img": "adesivo_troca_oleo_6x6_1000.jpg"
+          }
+        ]
+      },
+      {
+        "formato": "7x7 cm",
+        "variacoes": [
+          {
+            "quantidade": 250,
+            "preco": 200.0,
+            "img": "adesivo_troca_oleo_7x7_250.jpg"
+          },
+          {
+            "quantidade": 500,
+            "preco": 390.0,
+            "img": "adesivo_troca_oleo_7x7_500.jpg"
+          },
+          {
+            "quantidade": 1000,
+            "preco": 680.0,
+            "img": "adesivo_troca_oleo_7x7_1000.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "material": "Adesivo Plotter Recorte",
+    "img": "adesivo_plotter_recorte.jpg",
+    "formatos": [
+      {
+        "formato": "Vinil Branco <br>+ Máscara (m²)",
+        "variacoes": [
+          {
+            "quantidade": 1,
+            "preco": 100.0,
+            "img": "adesivo_plotter_branco_mascara.jpg"
+          }
+        ]
+      },
+      {
+        "formato": "Vinil Preto <br>+ Máscara (m²)",
+        "variacoes": [
+          {
+            "quantidade": 1,
+            "preco": 120.0,
+            "img": "adesivo_plotter_preto_mascara.jpg"
+          }
+        ]
+      }
+    ]
+  }
+]

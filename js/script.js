@@ -8,7 +8,6 @@ RenderPanfletosCartoes();
 RenderBlocos();
 // renderização Placas e LOnas=========Carrossel 4 e 5
 RenderLonasPlacas();
-
 // Adesivos diversos======================Carrossel 4, 5, 6, 7
 RenderAdesivosDiversos();
 // ================================navAdesivosFinal==========================

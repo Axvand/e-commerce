@@ -6,107 +6,105 @@ function RenderLonasPlacas() {
       }
       return response.json();
     })
-    .then((produto) => {
-      const wrapper = document.querySelectorAll(".cards-wrapper");
-      console.log(wrapper);
-      produto.categorias.forEach((categoria) => {
-        categoria.formatos.forEach((formatoObj) => {
-          const card = document.createElement("div");
-          card.className = "product-card";
-          card.style.height = "350px";
-
-          // Lógica de preço
-          let precoTexto = "";
-          let precoNumber = 0;
-
-          if ("preco" in formatoObj) {
-            precoNumber = formatoObj.preco;
-            precoTexto = `R$ ${precoNumber.toFixed(2)}`;
-          } else if ("preco_por_m2" in formatoObj) {
-            precoNumber = formatoObj.preco_por_m2;
-            precoTexto = `R$ ${precoNumber.toFixed(2)} / m²`;
-          } else if ("preco_por_m2_variavel" in formatoObj) {
-            const min = formatoObj.preco_por_m2_variavel.min;
-            const max = formatoObj.preco_por_m2_variavel.max;
-            precoTexto = `R$ ${min.toFixed(2)} a <br>R$ ${max.toFixed(2)} / m²`;
-          }
-
-          card.innerHTML = `
-          <img src="Imagens/${formatoObj.img}" alt="${
-            produto.material
-          }" height="90px" />
-          <h3>${categoria.tipo}</h3>
-          <p style="font-size:14px">${formatoObj.formato}</p>
-          ${
-            categoria.obs
-              ? `<p style="font-size:13px; color:#888">${categoria.obs}</p>`
-              : ""
-          }
-          <p class="price">${precoTexto}</p>
-          <button class="btn btn-primary">Comprar</button>
-        `;
-
-          wrapper[3].appendChild(card);
-        });
-      });
-    })
-    .catch((error) => {
-      console.error("Erro ao carregar o arquivo JSON:", error);
-    });
-
-  // ================== Placas ==========================
-  fetch("./placas.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Erro ao carregar o JSON: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((produto) => {
-      const wrapper = document.querySelectorAll(".cards-wrapper");
-
-      produto.categorias.forEach((categoria, i) => {
-        const card = document.createElement("div");
-        card.className = "product-card";
-        card.style.height = "350px";
-
-        const primeiraOpcao = categoria.formatos[0];
-
-        // Criar opções do dropdown
-        const options = categoria.formatos
-          .map((f, index) => `<option value="${index}">${f.formato}</option>`)
-          .join("");
-
-        card.innerHTML = `
-        <img src="Imagens/${primeiraOpcao.img}" alt="${
-          categoria.tipo
-        }" height="90px" />
-        <h3 style=>${produto.material}<br><span style="font-size: 14px;">${
-          categoria.tipo
-        }</span></h3>
-        <p style="font-size:13px">${categoria.obs || ""}</p>
-        <p class="price">R$ ${primeiraOpcao.preco.toFixed(2)}</p>
-        <div class="size-selector">
-          <select class="form-select">
-            ${options}
-          </select>
-        </div>
-        <button class="btn btn-primary">Comprar</button>
-      `;
-
-        // Eventos para trocar preço e imagem conforme o formato selecionado
-        const select = card.querySelector("select");
-        const priceTag = card.querySelector(".price");
-        const imgTag = card.querySelector("img");
-
-        select.addEventListener("change", (event) => {
-          const index = event.target.value;
-          const formatoSelecionado = categoria.formatos[index];
-          priceTag.textContent = `R$ ${formatoSelecionado.preco.toFixed(2)}`;
-          imgTag.src = `Imagens/${formatoSelecionado.img}`;
-        });
-
-        wrapper[4].appendChild(card); // ou [i] se quiser separar os grupos
+    .then((produtos) => {
+      const wrappers = document.querySelectorAll(".cards-wrapper");
+      produtos.forEach((produto, produtoIndex) => {
+        // Tratamento especial para o material "Placas em PS"
+        if (produto.material === "Placas em PS") {
+          produto.categorias.forEach((categoria, categoriaIndex) => {
+            const card = document.createElement("div");
+            card.className = "product-card";
+            card.style.height = "350px";
+            // Cria o <select> para os formatos
+            const selectId = `select-${produtoIndex}-${categoriaIndex}`;
+            let optionsHTML = "";
+            categoria.formatos.forEach((formato, i) => {
+              optionsHTML += `<option value="${i}">${formato.formato}</option>`;
+            });
+            // Valor inicial
+            const primeiroFormato = categoria.formatos[0];
+            let precoTexto = `R$ ${primeiroFormato.preco.toFixed(2)}`;
+            card.innerHTML = `
+            <img src="Imagens/${
+              primeiroFormato.img
+            }" id="img-${selectId}" height="80px" />
+            <h3>${categoria.tipo}</h3>
+            ${
+              categoria.obs
+                ? `<p style="font-size:13px; color:#888">${categoria.obs}</p>`
+                : ""
+            }
+            <p class="price" id="preco-${selectId}">${precoTexto}</p>
+              <select class="form-select" id="${selectId}">
+                ${optionsHTML}
+              </select>
+            <button class="btn btn-primary">Comprar</button>
+          `;
+            // Insere o card no wrapper[3] e wrapper[4]
+            const wrapperIndex = categoriaIndex + 3;
+            if (wrappers[3]) {
+              wrappers[3].appendChild(card);
+            } else {
+              console.warn(`Wrapper[${wrapperIndex}] não encontrado.`);
+            }
+            // Adiciona evento de mudança ao select
+            setTimeout(() => {
+              const select = document.getElementById(selectId);
+              const precoEl = document.getElementById(`preco-${selectId}`);
+              const imgEl = document.getElementById(`img-${selectId}`);
+              select.addEventListener("change", (e) => {
+                const idx = parseInt(e.target.value);
+                const formato = categoria.formatos[idx];
+                precoEl.innerHTML = `R$ ${formato.preco.toFixed(2)}`;
+                imgEl.src = `Imagens/${formato.img}`;
+              });
+            }, 0);
+          });
+        }
+        // Para os demais produtos (ex: Banners, Lonas, etc.)
+        else {
+          produto.categorias.forEach((categoria) => {
+            categoria.formatos.forEach((formatoObj) => {
+              const card = document.createElement("div");
+              card.className = "product-card";
+              card.style.height = "350px";
+              // Lógica de preço
+              let precoTexto = "";
+              if ("preco" in formatoObj) {
+                precoTexto = `R$ ${formatoObj.preco.toFixed(2)}`;
+              } else if ("preco_por_m2" in formatoObj) {
+                precoTexto = `R$ ${formatoObj.preco_por_m2.toFixed(2)} / m²`;
+              } else if ("preco_por_m2_variavel" in formatoObj) {
+                const min = formatoObj.preco_por_m2_variavel.min;
+                const max = formatoObj.preco_por_m2_variavel.max;
+                precoTexto = `R$ ${min.toFixed(2)} a<br>R$ ${max.toFixed(
+                  2
+                )} / m²`;
+              }
+              card.innerHTML = `
+              <img src="Imagens/${formatoObj.img}" alt="${
+                produto.material
+              }" height="100px" />
+              <h3>${categoria.tipo}</h3>
+              <p style="font-size:14px">${formatoObj.formato}</p>
+              ${
+                categoria.obs
+                  ? `<p style="font-size:13px; color:#888">${categoria.obs}</p>`
+                  : ""
+              }
+              <p class="price">${precoTexto}</p><br>
+              <button class="btn btn-primary">Comprar</button>
+            `;
+              // Exemplo: adicionando no wrapper[5] para frente
+              const wrapperIndex = 3;
+              if (wrappers[wrapperIndex]) {
+                wrappers[wrapperIndex].appendChild(card);
+              } else {
+                console.warn(`Wrapper[${wrapperIndex}] não encontrado.`);
+              }
+            });
+          });
+        }
       });
     })
     .catch((error) => {
