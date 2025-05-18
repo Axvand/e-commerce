@@ -292,7 +292,7 @@ main {
   margin-bottom: 40px;
 
   /* ativa o scroll horizontal */
-  overflow-y: hidden; /* evita scroll vertical */
+  overflow-y: hidden; /*evita scroll vertical*/
   white-space: nowrap; /* impede que os itens quebrem para a linha de baixo */
   padding-bottom: 10px; /* espaço para não cortar conteúdo com a barra */
   scrollbar-width: auto; /* Firefox */
@@ -509,6 +509,9 @@ main {
 
 .menuMobile {
   display: none;
+}
+.adesivosConteiner {
+  background-color: var(--amarelo-claro);
 }
 
 @media (max-width: 768px) {
