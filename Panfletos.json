@@ -10,37 +10,37 @@
             "formato": "10x15",
             "impressao": "Frente Colorido",
             "preco": 300.0,
-            "img": "panfleto_10x15_frente.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido.jpg"
           },
           {
             "formato": "10x15",
             "impressao": "Frente e Verso Colorido",
             "preco": 400.0,
-            "img": "panfleto_10x15_fv.jpg"
+            "img": "../imgs/panfletos/panfleto-frenteeverso-colorido.jpg"
           },
           {
             "formato": "10x21",
             "impressao": "Frente Colorido",
             "preco": 410.0,
-            "img": "panfleto_10x21_frente.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido2.jpg"
           },
           {
             "formato": "10x21",
             "impressao": "Frente e Verso Colorido",
             "preco": 500.0,
-            "img": "panfleto_10x21_fv.jpg"
+            "img": "../imgs/panfletos/panfleto-frenteeverso-colorido2.jpg"
           },
           {
             "formato": "15x21",
             "impressao": "Frente Colorido",
             "preco": 470.0,
-            "img": "panfleto_15x21_frente.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido.jpg"
           },
           {
             "formato": "15x21",
             "impressao": "Frente e Verso Colorido",
             "preco": 600.0,
-            "img": "panfleto_15x21_fv.jpg"
+            "img": "../imgs/panfletos/panfleto-frenteeverso-colorido.jpg"
           }
         ],
         "10000": [
@@ -48,37 +48,37 @@
             "formato": "10x15",
             "impressao": "Frente Colorido",
             "preco": 550.0,
-            "img": "panfleto_10x15_frente_10000.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido2.jpg"
           },
           {
             "formato": "10x15",
             "impressao": "Frente e Verso Colorido",
             "preco": 700.0,
-            "img": "panfleto_10x15_fv_10000.jpg"
+            "img": "../imgs/panfletos/panfleto-frenteeverso-colorido2.jpg"
           },
           {
             "formato": "10x21",
             "impressao": "Frente Colorido",
             "preco": 800.0,
-            "img": "panfleto_10x21_frente_10000.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido.jpg"
           },
           {
             "formato": "10x21",
             "impressao": "Frente e Verso Colorido",
             "preco": 950.0,
-            "img": "panfleto_10x21_fv_10000.jpg"
+            "img": "../imgs/panfletos/panfleto-frenteeverso-colorido2.jpg"
           },
           {
             "formato": "15x21",
             "impressao": "Frente Colorido",
             "preco": 900.0,
-            "img": "panfleto_15x21_frente_10000.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido2.jpg"
           },
           {
             "formato": "15x21",
             "impressao": "Frente e Verso Colorido",
             "preco": 1100.0,
-            "img": "panfleto_15x21_fv_10000.jpg"
+            "img": "../imgs/panfletos/panfleto-frenteeverso-colorido.jpg"
           }
         ]
       },
@@ -94,22 +94,22 @@
         {
           "descricao": "Cartão Simples Frente Colorido<br/>Verso Preto",
           "preco": "whatsapp",
-          "img": "cartao_frente_preto_verso.jpg"
+          "img": "../imgs/cartoes/cartao-verso-preto.jpg"
         },
         {
           "descricao": "Completo Cartão Frente e <br>Verso Colorido",
           "preco": "whatsapp",
-          "img": "cartao_frente_verso_colorido.jpg"
+          "img": "../imgs/cartoes/cartao-verso-colorido.jpg"
         },
         {
           "descricao": "Cartão Frente e Verso Colorido,<br/> Verniz Localizado",
           "preco": "whatsapp",
-          "img": "cartao_verniz_localizado.jpg"
+          "img": "../imgs/cartoes/cartao-verso-colorido-verniz.jpg"
         },
         {
           "descricao": "Cartão Frente e Verso Colorido,<br/> Verniz e Canto Arredondado",
           "preco": "whatsapp",
-          "img": "cartao_verniz_canto_arredondado.jpg"
+          "img": "../imgs/cartoes/cartao-redondo.png"
         }
       ]
     }

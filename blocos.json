@@ -10,27 +10,27 @@
         {
           "quantidade": 6,
           "preco": 90.0,
-          "img": "bloco_10x15_6.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas.jpg"
         },
         {
           "quantidade": 10,
           "preco": 110.0,
-          "img": "bloco_10x15_10.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas.jpg"
         },
         {
           "quantidade": 20,
           "preco": 200.0,
-          "img": "bloco_10x15_20.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas.jpg"
         },
         {
           "quantidade": 30,
           "preco": 250.0,
-          "img": "bloco_10x15_30.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas.jpg"
         },
         {
           "quantidade": 50,
           "preco": 350.0,
-          "img": "bloco_10x15_50.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas.jpg"
         }
       ]
     },
@@ -40,27 +40,27 @@
         {
           "quantidade": 6,
           "preco": 100.0,
-          "img": "bloco_10x15_2_6.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas2.png"
         },
         {
           "quantidade": 10,
           "preco": 140.0,
-          "img": "bloco_10x15_2_10.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas2.png"
         },
         {
           "quantidade": 20,
           "preco": 240.0,
-          "img": "bloco_10x15_2_20.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas2.png"
         },
         {
           "quantidade": 30,
           "preco": 300.0,
-          "img": "bloco_10x15_2_30.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas2.png"
         },
         {
           "quantidade": 50,
           "preco": 500.0,
-          "img": "bloco_10x15_2_50.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas2.png"
         }
       ]
     },
@@ -70,27 +70,27 @@
         {
           "quantidade": 6,
           "preco": 140.0,
-          "img": "bloco_15x_6.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas3.jpg"
         },
         {
           "quantidade": 10,
           "preco": 180.0,
-          "img": "bloco_15x_10.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas3.jpg"
         },
         {
           "quantidade": 20,
           "preco": 300.0,
-          "img": "bloco_15x_20.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas3.jpg"
         },
         {
           "quantidade": 30,
           "preco": 420.0,
-          "img": "bloco_15x_30.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas3.jpg"
         },
         {
           "quantidade": 50,
           "preco": 580.0,
-          "img": "bloco_15x_50.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas3.jpg"
         }
       ]
     },
@@ -100,17 +100,17 @@
         {
           "quantidade": 5,
           "preco": 160.0,
-          "img": "bloco_30x21_5.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas4.jpg"
         },
         {
           "quantidade": 10,
           "preco": 280.0,
-          "img": "bloco_30x21_10.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas4.jpg"
         },
         {
           "quantidade": 20,
           "preco": 480.0,
-          "img": "bloco_30x21_20.jpg"
+          "img": "../imgs/blocos/blocos-e-comandas4.jpg"
         }
       ]
     }
