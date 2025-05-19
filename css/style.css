@@ -800,14 +800,18 @@ footer {
 }
 
 .card-placa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: white;
   text-align: center;
+  background-color: var(--amarelo-escuro);
 }
 
 .card-placa p {
