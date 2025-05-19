@@ -14,7 +14,7 @@ function RenderLonasPlacas() {
           produto.categorias.forEach((categoria, categoriaIndex) => {
             const card = document.createElement("div");
             card.className = "product-card";
-            card.style.height = "350px";
+            card.style.height = "364px";
             // Cria o <select> para os formatos
             const selectId = `select-${produtoIndex}-${categoriaIndex}`;
             let optionsHTML = "";
@@ -67,7 +67,7 @@ function RenderLonasPlacas() {
             categoria.formatos.forEach((formatoObj) => {
               const card = document.createElement("div");
               card.className = "product-card";
-              card.style.height = "350px";
+              card.style.height = "365px";
               // Lógica de preço
               let precoTexto = "";
               if ("preco" in formatoObj) {
@@ -92,7 +92,7 @@ function RenderLonasPlacas() {
                   ? `<p style="font-size:13px; color:#888">${categoria.obs}</p>`
                   : ""
               }
-              <p class="price">${precoTexto}</p><br>
+              <p class="price">${precoTexto}</p>
               <button class="btn btn-primary">Comprar</button>
             `;
               // Exemplo: adicionando no wrapper[5] para frente

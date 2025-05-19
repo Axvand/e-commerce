@@ -7,18 +7,66 @@
         "tipo": "Placas em PS + Adesivo",
         "obs": "Preços por unidade",
         "formatos": [
-          { "formato": "10 x 10 cm", "preco": 7.0, "img": "placa_10x10.jpg" },
-          { "formato": "12 x 12 cm", "preco": 8.0, "img": "placa_12x12.jpg" },
-          { "formato": "15 x 15 cm", "preco": 12.0, "img": "placa_15x15.jpg" },
-          { "formato": "10 x 20 cm", "preco": 13.0, "img": "placa_10x20.jpg" },
-          { "formato": "20 x 20 cm", "preco": 18.0, "img": "placa_20x20.jpg" },
-          { "formato": "20 x 25 cm", "preco": 23.0, "img": "placa_20x25.jpg" },
-          { "formato": "20 x 30 cm", "preco": 30.0, "img": "placa_20x30.jpg" },
-          { "formato": "40 x 30 cm", "preco": 45.0, "img": "placa_40x30.jpg" },
-          { "formato": "50 x 50 cm", "preco": 50.0, "img": "placa_50x50.jpg" },
-          { "formato": "60 x 40 cm", "preco": 60.0, "img": "placa_60x40.jpg" },
-          { "formato": "80 x 60 cm", "preco": 90.0, "img": "placa_80x60.jpg" },
-          { "formato": "80 x 80 cm", "preco": 120.0, "img": "placa_80x80.jpg" },
+          {
+            "formato": "10 x 10 cm",
+            "preco": 7.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "12 x 12 cm",
+            "preco": 8.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "15 x 15 cm",
+            "preco": 12.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "10 x 20 cm",
+            "preco": 13.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "20 x 20 cm",
+            "preco": 18.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "20 x 25 cm",
+            "preco": 23.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "20 x 30 cm",
+            "preco": 30.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "40 x 30 cm",
+            "preco": 45.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "50 x 50 cm",
+            "preco": 50.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "60 x 40 cm",
+            "preco": 60.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "80 x 60 cm",
+            "preco": 90.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
+          {
+            "formato": "80 x 80 cm",
+            "preco": 120.0,
+            "img": "../imgs/placas/placa_ps_2mm1.jpg"
+          },
           {
             "formato": "100 x 100 cm",
             "preco": 150.0,
@@ -30,19 +78,71 @@
         "tipo": "Placas em PS 2mm",
         "obs": "Preços por unidade",
         "formatos": [
-          { "formato": "10 x 10 cm", "preco": 10.0, "img": "ps_10x10.jpg" },
-          { "formato": "12 x 12 cm", "preco": 10.0, "img": "ps_12x12.jpg" },
-          { "formato": "15 x 15 cm", "preco": 15.0, "img": "ps_15x15.jpg" },
-          { "formato": "10 x 20 cm", "preco": 15.0, "img": "ps_10x20.jpg" },
-          { "formato": "20 x 20 cm", "preco": 20.0, "img": "ps_20x20.jpg" },
-          { "formato": "20 x 25 cm", "preco": 25.0, "img": "ps_20x25.jpg" },
-          { "formato": "20 x 30 cm", "preco": 35.0, "img": "ps_20x30.jpg" },
-          { "formato": "40 x 30 cm", "preco": 40.0, "img": "ps_40x30.jpg" },
-          { "formato": "50 x 50 cm", "preco": 60.0, "img": "ps_50x50.jpg" },
-          { "formato": "60 x 40 cm", "preco": 80.0, "img": "ps_60x40.jpg" },
-          { "formato": "80 x 60 cm", "preco": 130.0, "img": "ps_80x60.jpg" },
-          { "formato": "80 x 80 cm", "preco": 150.0, "img": "ps_80x80.jpg" },
-          { "formato": "100 x 100 cm", "preco": 180.0, "img": "ps_100x100.jpg" }
+          {
+            "formato": "10 x 10 cm",
+            "preco": 10.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "12 x 12 cm",
+            "preco": 10.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "15 x 15 cm",
+            "preco": 15.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "10 x 20 cm",
+            "preco": 15.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "20 x 20 cm",
+            "preco": 20.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "20 x 25 cm",
+            "preco": 25.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "20 x 30 cm",
+            "preco": 35.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "40 x 30 cm",
+            "preco": 40.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "50 x 50 cm",
+            "preco": 60.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "60 x 40 cm",
+            "preco": 80.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "80 x 60 cm",
+            "preco": 130.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "80 x 80 cm",
+            "preco": 150.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          },
+          {
+            "formato": "100 x 100 cm",
+            "preco": 180.0,
+            "img": "../imgs/placas/placa-ps-2mm-adesivado2.png"
+          }
         ]
       }
     ]
@@ -58,27 +158,27 @@
           {
             "formato": "0.60 x 0.40 m",
             "preco": 35.0,
-            "img": "banner_060x040.jpg"
+            "img": "../imgs/placas/banners-440g1.png"
           },
           {
             "formato": "0.80 x 0.60 m",
             "preco": 40.0,
-            "img": "banner_080x060.jpg"
+            "img": "../imgs/placas/banners-440g2.png"
           },
           {
             "formato": "1.05 x 0.80 m",
             "preco": 50.0,
-            "img": "banner_105x080.jpg"
+            "img": "../imgs/placas/banners-440g3.png"
           },
           {
             "formato": "1.20 x 0.80 m",
             "preco": 60.0,
-            "img": "banner_120x080.jpg"
+            "img": "../imgs/placas/banners-440g4.png"
           },
           {
             "formato": "Outros tamanhos",
             "preco_por_m2": 60.0,
-            "img": "banner_personalizado.jpg"
+            "img": "../imgs/placas/banners-440g5.jpg"
           }
         ]
       },
@@ -88,12 +188,12 @@
           {
             "formato": "Lona sem acabamento",
             "preco_por_m2": 50.0,
-            "img": "lona_sem_acabamento.jpg"
+            "img": "../imgs/placas/lona-440g1.jpg"
           },
           {
             "formato": "Lona para fachada <br>(c/ instalação acima de 4m)",
             "preco_por_m2": 70.0,
-            "img": "lona_fachada_instalacao.jpg"
+            "img": "../imgs/placas/lona-440g2.png"
           },
           {
             "formato": "Lona para fachada + ferragem <br> (c/ instalação acima de 4m)",
@@ -101,17 +201,17 @@
               "min": 110.0,
               "max": 150.0
             },
-            "img": "lona_fachada_ferragem.jpg"
+            "img": "../imgs/placas/lona-440g3.png"
           },
           {
             "formato": "Lona com ilhós",
             "preco_por_m2": 60.0,
-            "img": "lona_ilhos.jpg"
+            "img": "../imgs/placas/lona-440g4.png"
           },
           {
             "formato": "Lona com ilhós <br>(c/ instalação acima de 4m)",
             "preco_por_m2": 70.0,
-            "img": "lona_ilhos_instalada.jpg"
+            "img": "../imgs/placas/lona-440g5.jpg"
           }
         ]
       }
