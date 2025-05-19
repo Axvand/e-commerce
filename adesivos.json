@@ -5,32 +5,32 @@
     {
       "descricao": "Adesivo metro quadrado - simples",
       "preco": 50.0,
-      "img": "adesivo_m2_50.jpg"
+      "img": "../imgs/adesivos/adesivo1.png"
     },
     {
       "descricao": "Adesivo metro quadrado - tipo 2",
       "preco": 70.0,
-      "img": "adesivo_m2_70.jpg"
+      "img": "../imgs/adesivos/adesivo2.jpg"
     },
     {
       "descricao": "Adesivo laminado (m²)",
       "preco": 90.0,
-      "img": "adesivo_laminado.jpg"
+      "img": "../imgs/adesivos/adesivo3.png"
     },
     {
       "descricao": "Adesivo com corte eletrônico",
       "preco": 70.0,
-      "img": "adesivo_corte.jpg"
+      "img": "../imgs/adesivos/adesivo4.jpg"
     },
     {
       "descricao": "Adesivo com corte e laminação",
       "preco": 120.0,
-      "img": "adesivo_corte_laminado.jpg"
+      "img": "../imgs/adesivos/adesivo5.jpg"
     },
     {
       "descricao": "Adesivo perfurado (m²)",
       "preco": 80.0,
-      "img": "adesivo_perfurado.jpg"
+      "img": "../imgs/adesivos/adesivo6.png"
     }
   ]
 }

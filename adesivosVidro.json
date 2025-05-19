@@ -8,7 +8,7 @@
         {
           "quantidade": 1,
           "preco": 30.0,
-          "img": "adesivo_vidros_40x30.jpg"
+          "img": "../imgs/adesivosVidro/adesivosVidro1.jpg"
         }
       ]
     },
@@ -18,7 +18,7 @@
         {
           "quantidade": 1,
           "preco": 45.0,
-          "img": "adesivo_vidros_50x50.jpg"
+          "img": "../imgs/adesivosVidro/adesivosVidro2.jpg"
         }
       ]
     },
@@ -28,7 +28,7 @@
         {
           "quantidade": 1,
           "preco": 60.0,
-          "img": "adesivo_vidros_60x60.jpg"
+          "img": "../imgs/adesivosVidro/adesivosVidro1.jpg"
         }
       ]
     },
@@ -38,7 +38,7 @@
         {
           "quantidade": 1,
           "preco": 75.0,
-          "img": "adesivo_vidros_70x70.jpg"
+          "img": "../imgs/adesivosVidro/adesivosVidro2.jpg"
         }
       ]
     },
@@ -48,7 +48,7 @@
         {
           "quantidade": 1,
           "preco": 90.0,
-          "img": "adesivo_vidros_80x80.jpg"
+          "img": "../imgs/adesivosVidro/adesivosVidro1.jpg"
         }
       ]
     },
@@ -58,7 +58,7 @@
         {
           "quantidade": 1,
           "preco": 100.0,
-          "img": "adesivo_vidros_metro.jpg"
+          "img": "../imgs/adesivosVidro/adesivosVidro2.jpg"
         }
       ]
     }
