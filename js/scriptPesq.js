@@ -152,7 +152,9 @@ function PesquisaProds() {
 
         return `
       <div class="card">
-        <img src="${r.img}" alt="${r.nome}" />
+        <img src="https://axvand.github.io/e-commerce/${r.img}" alt="${
+          r.nome
+        }" />
         <div class="card-info">
           <h3>${r.nome}</h3>
           <p><strong>Tipo:</strong> ${r.tipo}</p>
