@@ -539,6 +539,55 @@ main {
 }
 
 /* ===========================sessões6 final================= */
+/* ============================================ */
+.sobreNos {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.39);
+}
+.conteinerInfoSobreNos {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.mapa {
+  height: 360px;
+  width: 600px;
+  border-radius: 20px;
+}
+.paragrafoSobreNos {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 460px;
+  height: 380px;
+  line-height: 1.75;
+}
+@media (max-width: 768px) {
+  .sobreNos {
+    height: 1000px;
+  }
+  .mapa {
+    height: 320px;
+    width: 300px;
+  }
+  .conteinerInfoSobreNos {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .paragrafoSobreNos {
+    text-align: center;
+    width: 320px;
+    margin-top: 20px;
+    height: 480px;
+  }
+}
+/* ============================================ */
 
 /* Footer */
 footer {
