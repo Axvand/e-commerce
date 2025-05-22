@@ -152,8 +152,8 @@ function PesquisaProds() {
 
         return `
       <div class="card">
-       <img src="https://axvand.github.io/e-commerce/${r.img.replace(
-         /^\.?\//,
+       <img src="https://axvand.github.io/e-commerce${r.img.replace(
+         /\./g,
          ""
        )}" alt="${r.nome}" />
         <div class="card-info">
