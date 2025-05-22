@@ -10,7 +10,7 @@
             "formato": "10x15",
             "impressao": "Frente Colorido",
             "preco": 300.0,
-            "img": "https://axvand.github.io/e-commerce/imgs/panfletos/panfleto-frente-colorido.jpg"
+            "img": "../imgs/panfletos/panfleto-frente-colorido.jpg"
           },
           {
             "formato": "10x15",
