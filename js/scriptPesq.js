@@ -13,7 +13,7 @@ function PesquisaProds() {
     "./lonas.json",
     "./Panfletos.json",
   ];
-
+  console.log("Atualizar");
   let produtosIndexados = [];
 
   async function carregarTodos() {
