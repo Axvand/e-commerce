@@ -139,6 +139,7 @@ function PesquisaProds() {
       return;
     }
 
+    console.log("on");
     const html = resultados
       .map((r) => {
         const msg = encodeURIComponent(
