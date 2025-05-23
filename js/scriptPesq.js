@@ -151,10 +151,14 @@ function PesquisaProds() {
         );
         const linkWhatsApp = `https://wa.me/5511999999999?text=${msg}`; // Altere o número!
 
+        let a = "../placeholder.png";
+        let novoA = r.img.replace(/^(\.\.\/)/, "");
+        console.log(novoA);
+
         return `
       <div class="card">
        <img src="https://axvand.github.io/e-commerce/${r.img.replace(
-         /\./g,
+         /^(\.\.\/)/,
          ""
        )}" alt="${r.nome}" />
         <div class="card-info">
