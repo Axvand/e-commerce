@@ -139,7 +139,6 @@ function PesquisaProds() {
       return;
     }
 
-    console.log("on");
     const html = resultados
       .map((r) => {
         const msg = encodeURIComponent(
@@ -151,9 +150,7 @@ function PesquisaProds() {
         );
         const linkWhatsApp = `https://wa.me/5511999999999?text=${msg}`; // Altere o número!
 
-        let a = "../placeholder.png";
-        let novoA = r.img.replace(/^(\.\.\/)/, "");
-        console.log(novoA);
+        console.log("on");
 
         return `
       <div class="card">
