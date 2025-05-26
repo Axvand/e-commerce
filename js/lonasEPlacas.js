@@ -38,8 +38,15 @@ function RenderLonasPlacas() {
               <select class="form-select" id="${selectId}">
                 ${optionsHTML}
               </select>
-            <button class="btn btn-primary">Comprar</button>
-          `;
+           <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+             categoria.tipo
+           )}" target="_blank">Consultar WhatsApp</a>
+      `;
+
+            function MsgWhatsapp(produto) {
+              let msg = `Olá, estou interesado nas ${produto}. Poderia me dar mais detalhes?`;
+              return msg;
+            }
             // Insere o card no wrapper[3] e wrapper[4]
             const wrapperIndex = categoriaIndex + 3;
             if (wrappers[3]) {
@@ -84,7 +91,7 @@ function RenderLonasPlacas() {
               card.innerHTML = `
               <img src="Imagens/${formatoObj.img}" alt="${
                 produto.material
-              }" height="100px" />
+              }" height="110px" />
               <h3>${categoria.tipo}</h3>
               <p style="font-size:14px">${formatoObj.formato}</p>
               ${
@@ -93,8 +100,16 @@ function RenderLonasPlacas() {
                   : ""
               }
               <p class="price">${precoTexto}</p>
-              <button class="btn btn-primary">Comprar</button>
-            `;
+             <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+               categoria.tipo,
+               formatoObj.formato
+             )}" target="_blank">Consultar WhatsApp</a>
+      `;
+
+              function MsgWhatsapp(produto, formato, quantidade) {
+                let msg = `Olá, estou interesado nos ${produto} de tamanho:${formato}. Poderia me dar mais detalhes?`;
+                return msg;
+              }
               // Exemplo: adicionando no wrapper[5] para frente
               const wrapperIndex = 3;
               if (wrappers[wrapperIndex]) {

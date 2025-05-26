@@ -30,8 +30,18 @@ function RenderPanfletosCartoes() {
                 <option value="${item.formato}">${item.formato}</option>
               </select>
             </div>
-            <button class="btn btn-primary">Comprar</button>
-          `;
+            <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+              produto.material,
+              quantidade,
+              item.formato
+            )}" target="_blank">Consultar WhatsApp</a>
+            `;
+
+              // <button class="btn btn-primary">Comprar</button>
+              function MsgWhatsapp(produto, descricao, formato) {
+                let msg = `Olá, estou interesado nos ${produto}. Quantidade:${descricao} e formato:${formato}. Gostaria de mais informações?`;
+                return msg;
+              }
               wrapper[0].appendChild(card);
             });
           });
@@ -53,9 +63,19 @@ function RenderPanfletosCartoes() {
               <option value="">${produto.formato || "Tamanho único"}</option>
             </select>
           </div>
-          <button class="btn btn-primary">Comprar</button>
-        `;
+          </p>
+          <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/5511999999999?text=${MsgWhatsapp(
+            produto.material,
+            opcao.descricao
+          )};" target="_blank">Consultar WhatsApp</a>
+          
+          `;
+            function MsgWhatsapp(produto, descricao) {
+              let msg = `Olá, estou interesado nos ${produto}. Poderia me dar mais detalhes?`;
+              return msg;
+            }
             wrapper[1].appendChild(card);
+            // <button class="btn btn-primary">Comprar</button>;
           });
         }
       });

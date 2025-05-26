@@ -25,10 +25,22 @@ function RenderAdesivosDiversos() {
         <h3>${produto.material}</h3>
         <p style="font-size:13px">${opcao.descricao}</p>
         <p class="price">R$ ${opcao.preco.toFixed(2)}</p>
-        <button class="btn btn-primary">Comprar</button>
+       <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+         produto.material,
+         opcao.descricao
+       )}"  target="_blank">Consultar WhatsApp</a>
       `;
 
+        function MsgWhatsapp(produto, formato, quantidade) {
+          let msg = `Olá, estou interesado nos ${produto} de descrição:${formato}. Poderia me dar mais detalhes?`;
+          return msg;
+        }
+
         wrapper[carrosselNumber1].appendChild(card);
+
+        function WhatsAppMessage(Produto) {
+          let message = ``;
+        }
       });
     })
     .catch((error) => {
@@ -66,8 +78,16 @@ function RenderAdesivosDiversos() {
         }" height="90px" />
               <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
               <p class="price">R$ ${variacao.preco.toFixed(2)}</p>
-              <button class="btn btn-primary">Comprar</button>
-            `;
+             <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+               produto.material,
+               formatoObj.formato
+             )}"  target="_blank">Consultar WhatsApp2</a>
+      `;
+
+        function MsgWhatsapp(produto, formato, quantidade) {
+          let msg = `Olá, estou interesado nos ${produto} de tamanho: ${formato}. Poderia me dar mais detalhes?`;
+          return msg;
+        }
 
         wrapper[carrosselNumber2].appendChild(card);
       });
@@ -113,8 +133,16 @@ function RenderAdesivosDiversos() {
             <div class="size-selector">
               <select class="form-select">${options}</select>
             </div>
-            <button class="btn btn-primary">Comprar</button>
-          `;
+            <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+              produto.material,
+              formatoObj.formato
+            )}"  target="_blank">Consultar WhatsApp</a>
+      `;
+
+            function MsgWhatsapp(produto, formato, quantidade) {
+              let msg = `Olá, estou interesado nos ${produto} de tamanho: ${formato}. Poderia me dar mais detalhes?`;
+              return msg;
+            }
 
             const select = card.querySelector("select");
             const priceTag = card.querySelector(".price");
@@ -146,8 +174,16 @@ function RenderAdesivosDiversos() {
               <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
               <p class="price">R$ ${variacao.preco.toFixed(2)}</p>
               <p>${variacao.quantidade} un.</p>
-              <button class="btn btn-primary">Comprar</button>
-            `;
+              <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+                produto.material,
+                formatoObj.formato
+              )}"  target="_blank">Consultar WhatsApp</a>
+      `;
+
+              function MsgWhatsapp(produto, formato, quantidade) {
+                let msg = `Olá, estou interesado nos ${produto}. Poderia me dar mais detalhes?`;
+                return msg;
+              }
 
               wrapper[6].appendChild(card);
             });
@@ -203,8 +239,16 @@ function RenderAdesivosDiversos() {
         <p id="${priceId}" class="price">R$ ${primeiraVariacao.preco.toFixed(
           2
         )}</p>
-        <button class="btn btn-primary">Comprar</button>
+         <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+           produto.material,
+           formatoObj.formato
+         )}"  target="_blank">Consultar WhatsApp</a>
       `;
+
+        function MsgWhatsapp(produto, formato, quantidade) {
+          let msg = `Olá, estou interesado nos ${produto} de tamanho: ${formato}. Poderia me dar mais detalhes?`;
+          return msg;
+        }
 
         // Adiciona comportamento dinâmico ao select
         setTimeout(() => {

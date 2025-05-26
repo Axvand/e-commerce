@@ -37,8 +37,16 @@ function RenderBlocos() {
             ${options}
           </select>
         </div>
-        <button class="btn btn-primary">Comprar</button>
+        <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
+          produto.material,
+          formatoObj.formato
+        )}" target="_blank">Consultar WhatsApp</a>
       `;
+
+        function MsgWhatsapp(produto, formato, quantidade) {
+          let msg = `Olá, estou interesado nas ${produto} de tamanho:${formato}. Poderia me dar mais detalhes?`;
+          return msg;
+        }
 
         // Adiciona evento para trocar o preço quando selecionar nova quantidade
         const select = card.querySelector("select");

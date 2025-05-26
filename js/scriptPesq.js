@@ -148,7 +148,7 @@ function PesquisaProds() {
             typeof r.preco === "number" ? "R$ " + r.preco.toFixed(2) : r.preco
           }`
         );
-        const linkWhatsApp = `https://wa.me/5511999999999?text=${msg}`; // Altere o número!
+        const linkWhatsApp = `https://wa.me/556193265219?text=${msg}`; // Altere o número!
 
         console.log("on");
 

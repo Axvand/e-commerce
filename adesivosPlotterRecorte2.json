@@ -1,9 +1,9 @@
 {
-  "material": "Adesivo Plotter Recorte",
+  "material": "Adesivos Plotter Recorte",
   "img": "adesivo_plotter_recorte.jpg",
   "formatos": [
     {
-      "formato": "20x20 cm <br>(Branco/Preto)",
+      "formato": "20x20",
       "variacoes": [
         {
           "quantidade": 1,
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "formato": "30x30 cm <br>(Branco/Preto)",
+      "formato": "30x30 cm",
       "variacoes": [
         {
           "quantidade": 1,
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "formato": "40x40 cm <br>(Branco/Preto)",
+      "formato": "40x40 cm",
       "variacoes": [
         {
           "quantidade": 1,
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "formato": "50x50 cm <br>(Branco/Preto)",
+      "formato": "50x50 cm",
       "variacoes": [
         {
           "quantidade": 1,
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "formato": "60x60 cm <br>(Branco/Preto)",
+      "formato": "60x60 cm",
       "variacoes": [
         {
           "quantidade": 1,
