@@ -12,7 +12,7 @@ function RenderBlocos() {
       produto.formatos.forEach((formatoObj) => {
         const card = document.createElement("div");
         card.className = "product-card";
-        card.style.height = "350px";
+        card.style.height = "370px";
 
         // Pegamos a primeira variação como default
         const primeiraVariacao = formatoObj.variacoes[0];

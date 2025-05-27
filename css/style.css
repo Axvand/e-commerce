@@ -597,6 +597,8 @@ footer {
   color: var(--cinza-claro);
   background-image: url(../Imagens/footerBackground.png);
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 /* Responsividade */

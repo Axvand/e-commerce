@@ -1,0 +1,11 @@
+.carrHeader2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .carrHeader2 {
+    display: block;
+  }
+  .carrHeader1 {
+    display: none;
+  }
+}
