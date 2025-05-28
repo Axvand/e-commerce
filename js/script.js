@@ -3,6 +3,7 @@ import RenderBlocos from "./blocos.js";
 import RenderLonasPlacas from "./lonasEPlacas.js";
 import RenderAdesivosDiversos from "./adesivos.js";
 import PesquisaProds from "./scriptPesq.js";
+import SetAtributeElements from "./pastasTagsPapel.js";
 //renderização panfletos e cartões de visita========Carrossel 1 e 2:
 RenderPanfletosCartoes();
 //renderização blocos e comandas========Carrossel 3 :
@@ -13,6 +14,8 @@ RenderLonasPlacas();
 RenderAdesivosDiversos();
 // =======================pesq=========
 PesquisaProds();
+// ======================================
+// SetAtributeElements();
 // ======================================
 let currentSlide = 1;
 const totalSlides = 3;
