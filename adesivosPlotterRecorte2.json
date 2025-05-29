@@ -8,22 +8,22 @@
         {
           "quantidade": 1,
           "preco": 15.0,
-          "img": "../imgs/adesivosPlotter/adesivosPlotter1.png"
+          "img": "../imgs/adesivosPlotter/adesivosPlotter1.jpg"
         },
         {
           "quantidade": 2,
           "preco": 25.0,
-          "img": "../imgs/adesivosPlotter/adesivosPlotter1.png"
+          "img": "../imgs/adesivosPlotter/adesivosPlotter1.jpg"
         },
         {
           "quantidade": 3,
           "preco": 30.0,
-          "img": "../imgs/adesivosPlotter/adesivosPlotter1.png"
+          "img": "../imgs/adesivosPlotter/adesivosPlotter1.jpg"
         },
         {
           "quantidade": 4,
           "preco": 38.0,
-          "img": "../imgs/adesivosPlotter/adesivosPlotter1.png"
+          "img": "../imgs/adesivosPlotter/adesivosPlotter1.jpg"
         }
       ]
     },

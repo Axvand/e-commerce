@@ -240,7 +240,7 @@ function RenderAdesivosDiversos() {
 
         const card = document.createElement("div");
         card.className = "product-card";
-        card.style.height = "400px";
+        card.style.height = "380px";
 
         const selectId = `select-${index}`;
         const imgId = `img-${index}`;
