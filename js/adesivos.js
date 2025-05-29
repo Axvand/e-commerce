@@ -1,5 +1,6 @@
 function RenderAdesivosDiversos() {
-  const carrosselNumber1 = 4;
+  const carrosselNumber1 = 1;
+  const preçoMensagem = "Faça um Orçamento";
   fetch("./adesivos.json")
     .then((response) => {
       if (!response.ok) {
@@ -17,6 +18,11 @@ function RenderAdesivosDiversos() {
         const card = document.createElement("div");
         card.className = "product-card";
         card.style.height = "350px";
+        // =======
+        // =======
+        // <p class="price">R$ ${opcao.preco.toFixed(2)}</p>
+        // =======
+        // =======
 
         card.innerHTML = `
         <img src="Imagens/${opcao.img}" alt="${
@@ -24,7 +30,7 @@ function RenderAdesivosDiversos() {
         }" height="90px" />
         <h3>${produto.material}</h3>
         <p style="font-size:13px">${opcao.descricao}</p>
-        <p class="price">R$ ${opcao.preco.toFixed(2)}</p>
+        <p class="price">${preçoMensagem}</p>
        <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
          produto.material,
          opcao.descricao
@@ -51,7 +57,7 @@ function RenderAdesivosDiversos() {
   console.log(wrapper);
 
   // ===============Carrossel2 adesivos Vidro======================
-  const carrosselNumber2 = 5;
+  const carrosselNumber2 = 2;
   fetch("./adesivosVidro.json")
     .then((response) => {
       if (!response.ok) {
@@ -72,12 +78,18 @@ function RenderAdesivosDiversos() {
         card.className = "product-card";
         card.style.height = "350px";
 
+        //  ==========
+        //  ==========
+        // <p class="price">R$ ${variacao.preco.toFixed(2)}</p>
+        //  ==========
+        //  ==========
+
         card.innerHTML = `
               <img src="Imagens/${variacao.img}" alt="${
           produto.material
         }" height="90px" />
               <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
-              <p class="price">R$ ${variacao.preco.toFixed(2)}</p>
+              <p class="price">${preçoMensagem}</p>
              <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
                produto.material,
                formatoObj.formato
@@ -97,7 +109,7 @@ function RenderAdesivosDiversos() {
     });
 
   // ===============Carrossel3 adesivos Troca de óleo======================
-  const carrosselNumber3 = 6;
+  const carrosselNumber3 = 3;
   fetch("./adesivosPlotterRecorte.json")
     .then((response) => {
       if (!response.ok) {
@@ -107,7 +119,7 @@ function RenderAdesivosDiversos() {
     })
     .then((produtos) => {
       const wrapper = document.querySelectorAll(".cards-wrapper");
-      wrapper[6].innerHTML = "";
+      wrapper[carrosselNumber3].innerHTML = "";
 
       produtos.forEach((produto, produtoIndex) => {
         // Para os dois primeiros produtos: dois cards com select dinâmico
@@ -123,13 +135,21 @@ function RenderAdesivosDiversos() {
                 (v, i) => `<option value="${i}">${v.quantidade} un.</option>`
               )
               .join("");
+            // ============
+            // ============
+            // <p class="price">R$ ${primeiraVariacao.preco.toFixed(2)}</p>
+            // <div class="size-selector">
+            //   <select class="form-select">${options}</select>
+            // </div>
+            // ============
+            // ============
 
             card.innerHTML = `
             <img src="Imagens/${primeiraVariacao.img}" alt="${
               produto.material
             }" height="90px" />
             <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
-            <p class="price">R$ ${primeiraVariacao.preco.toFixed(2)}</p>
+            <p class="price">${preçoMensagem}</p>
             <div class="size-selector">
               <select class="form-select">${options}</select>
             </div>
@@ -157,7 +177,7 @@ function RenderAdesivosDiversos() {
               imgTag.src = `Imagens/${variacaoSelecionada.img}`;
             });
 
-            wrapper[6].appendChild(card);
+            wrapper[carrosselNumber3].appendChild(card);
           });
         } else {
           // Para os demais produtos: um card por variação (sem select)
@@ -166,6 +186,12 @@ function RenderAdesivosDiversos() {
               const card = document.createElement("div");
               card.className = "product-card";
               card.style.height = "350px";
+              // ========
+              // ========
+              // <p class="price">R$ ${variacao.preco.toFixed(2)}</p>
+              // <p>${variacao.quantidade} un.</p>
+              // ========
+              // ========
 
               card.innerHTML = `
               <img src="Imagens/${variacao.img}" alt="${
@@ -195,7 +221,7 @@ function RenderAdesivosDiversos() {
       console.error("Erro ao carregar o arquivo JSON:", error);
     });
   // ====================================================
-  const carrosselNumber4 = 7;
+  const carrosselNumber4 = 4;
   fetch("./adesivosPlotterRecorte2.json")
     .then((response) => {
       if (!response.ok) {
@@ -221,24 +247,25 @@ function RenderAdesivosDiversos() {
         const priceId = `price-${index}`;
 
         // Cria opções do select dinamicamente
+        // ========
+        // <p id="${priceId}" class="price">R$ ${primeiraVariacao.preco.toFixed(
+        //   2
+        // )}</p>
+        // ========
         const options = formatoObj.variacoes.map(
-          (v, i) =>
-            `<option value="${i}">${v.quantidade} unid. - R$ ${v.preco.toFixed(
-              2
-            )}</option>`
+          (v, i) => `<option value="${i}">${v.quantidade} un.</option>`
         );
 
+        // ========
         card.innerHTML = `
         <img id="${imgId}" src="Imagens/${primeiraVariacao.img}" alt="${
           produto.material
         }" height="90px" />
         <h3>${produto.material} <br> Tamanho: ${formatoObj.formato}</h3>
-        <select id="${selectId}" class="form-select mb-2">
+        <select id="${selectId}" display="none" class="form-select mb-2">
           ${options.join("")}
         </select>
-        <p id="${priceId}" class="price">R$ ${primeiraVariacao.preco.toFixed(
-          2
-        )}</p>
+        <p id="" class="price">Faça um Orçamento</p>
          <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
            produto.material,
            formatoObj.formato

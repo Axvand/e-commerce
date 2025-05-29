@@ -15,7 +15,7 @@ function SetAtributeElements() {
 
   SetAtribute(pastasTagsPapel[2], mensagemLetra1);
   SetAtribute(pastasTagsPapel[1], mensagemLetra2);
-  SetAtribute(pastasTagsPapel[0], mensagemLetra3);
+  SetAtribute(pastasTagsPapel[2], mensagemLetra3);
 }
 
 export default SetAtributeElements;

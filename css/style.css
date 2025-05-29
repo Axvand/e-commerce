@@ -804,6 +804,12 @@ footer {
   color: var(--amarelo-escuro);
   margin: 0;
 }
+/* .precoMessage2 {
+  font-size: 1.12rem;
+  font-weight: bold;
+  color: var(--amarelo-escuro);
+  margin: 0;
+} */
 
 .size-selector {
   width: 100%;

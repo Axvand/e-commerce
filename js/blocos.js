@@ -1,4 +1,5 @@
 function RenderBlocos() {
+  const numberCarrossel = 5;
   fetch("./blocos.json")
     .then((response) => {
       if (!response.ok) {
@@ -24,6 +25,11 @@ function RenderBlocos() {
               `<option value="${index}">${v.quantidade} un.</option>`
           )
           .join("");
+        // ==========
+        // ==========
+        // <p class="price" >R$ ${primeiraVariacao.preco.toFixed(2)}</p>
+        // ==========
+        // ==========
 
         card.innerHTML = `
         <img src="Imagens/${primeiraVariacao.img}" alt="${
@@ -31,7 +37,7 @@ function RenderBlocos() {
         }" height="90px" />
         <h3>${produto.material} <br> Tamanho:${formatoObj.formato}</h3>
         <p style="font-size:13px">${produto.impressao}</p>
-        <p class="price" >R$ ${primeiraVariacao.preco.toFixed(2)}</p>
+        <p class="price" >Faça um Orçamento</p>
         <div class="size-selector">
           <select class="form-select">
             ${options}
@@ -61,7 +67,7 @@ function RenderBlocos() {
           imgTag.src = `Imagens/${variacaoSelecionada.img}`;
         });
 
-        wrapper[2].appendChild(card);
+        wrapper[numberCarrossel].appendChild(card);
       });
     })
     .catch((error) => {

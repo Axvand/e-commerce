@@ -4,11 +4,11 @@ import RenderLonasPlacas from "./lonasEPlacas.js";
 import RenderAdesivosDiversos from "./adesivos.js";
 import PesquisaProds from "./scriptPesq.js";
 import SetAtributeElements from "./pastasTagsPapel.js";
-//renderização panfletos e cartões de visita========Carrossel 1 e 2:
+//renderização panfletos e cartões de visita======== Só realocar tudo.
 RenderPanfletosCartoes();
-//renderização blocos e comandas========Carrossel 3 :
+//renderização blocos e comandas========
 RenderBlocos();
-// renderização Placas e LOnas=========Carrossel 4 e 5
+// renderização Placas e LOnas=========
 RenderLonasPlacas();
 // Adesivos diversos======================Carrossel 4, 5, 6, 7
 RenderAdesivosDiversos();

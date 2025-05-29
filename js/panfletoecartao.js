@@ -1,5 +1,7 @@
 function RenderPanfletosCartoes() {
   //renderização panfletos e cartões de visita========Carrossel 1 e 2
+  const numberCarrossel = 6;
+  const numberCarrossel2 = 7;
   fetch("./Panfletos.json")
     .then((response) => {
       if (!response.ok) {
@@ -42,7 +44,7 @@ function RenderPanfletosCartoes() {
                 let msg = `Olá, estou interesado nos ${produto}. Quantidade:${descricao} e formato:${formato}. Gostaria de mais informações?`;
                 return msg;
               }
-              wrapper[0].appendChild(card);
+              wrapper[numberCarrossel].appendChild(card); //configuração de mudança de posição!
             });
           });
         } else if (produto.opcoes) {
@@ -74,7 +76,7 @@ function RenderPanfletosCartoes() {
               let msg = `Olá, estou interesado nos ${produto}. Poderia me dar mais detalhes?`;
               return msg;
             }
-            wrapper[1].appendChild(card);
+            wrapper[numberCarrossel2].appendChild(card);
             // <button class="btn btn-primary">Comprar</button>;
           });
         }

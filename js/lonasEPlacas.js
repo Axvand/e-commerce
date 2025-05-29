@@ -23,6 +23,11 @@ function RenderLonasPlacas() {
             });
             // Valor inicial
             const primeiroFormato = categoria.formatos[0];
+            // =============
+            // =============
+            // <p class="price" id="preco-${selectId}">${precoTexto}</p> logica de preços
+            // =============
+            // =============
             let precoTexto = `R$ ${primeiroFormato.preco.toFixed(2)}`;
             card.innerHTML = `
             <img src="Imagens/${
@@ -34,7 +39,7 @@ function RenderLonasPlacas() {
                 ? `<p style="font-size:13px; color:#888">${categoria.obs}</p>`
                 : ""
             }
-            <p class="price" id="preco-${selectId}">${precoTexto}</p>
+            <p class="price" id="">Faça um Orçamento</p>
               <select class="form-select" id="${selectId}">
                 ${optionsHTML}
               </select>
@@ -49,8 +54,8 @@ function RenderLonasPlacas() {
             }
             // Insere o card no wrapper[3] e wrapper[4]
             const wrapperIndex = categoriaIndex + 3;
-            if (wrappers[3]) {
-              wrappers[3].appendChild(card);
+            if (wrappers[0]) {
+              wrappers[0].appendChild(card);
             } else {
               console.warn(`Wrapper[${wrapperIndex}] não encontrado.`);
             }
@@ -88,6 +93,12 @@ function RenderLonasPlacas() {
                   2
                 )} / m²`;
               }
+              // =========
+              // =========
+              // <p class="price">${precoTexto}</p> logica de preço
+              // =========
+              // =========
+
               card.innerHTML = `
               <img src="Imagens/${formatoObj.img}" alt="${
                 produto.material
@@ -99,7 +110,7 @@ function RenderLonasPlacas() {
                   ? `<p style="font-size:13px; color:#888">${categoria.obs}</p>`
                   : ""
               }
-              <p class="price">${precoTexto}</p>
+              <p class="price">Faça um Orçamento</p>
              <a class="btn-whatsapp" style='text-align:center;' href="https://wa.me/+556193265219?text=${MsgWhatsapp(
                categoria.tipo,
                formatoObj.formato
@@ -111,7 +122,7 @@ function RenderLonasPlacas() {
                 return msg;
               }
               // Exemplo: adicionando no wrapper[5] para frente
-              const wrapperIndex = 3;
+              const wrapperIndex = 0;
               if (wrappers[wrapperIndex]) {
                 wrappers[wrapperIndex].appendChild(card);
               } else {
